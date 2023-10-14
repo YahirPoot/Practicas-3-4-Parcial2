@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica 4</h1>
+        <div class="product-details">
+            <input type="text" id="nombreProducto" placeholder="Nombre del Producto"><br>
+            <input type="number" id="precioProducto" placeholder="$"><br>
+            <button id="agregar-producto">Agregar Producto</button>
+            <div class="delete-products">
+                <input type="number" id="claveProducto" placeholder="ID del Producto a Eliminar">
+                <button id="eliminar-producto">Eliminar Producto</button>
+            </div>            
+        </div>
+        <div class="list-products">
+            <h3 class="subtitle">Productos</h3><br>
+            <ul id="listaProductos"></ul>
+            <h3 class="subtitle">Total:</h3>
+            <p><span id="costoTotal"></span></p>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica 3</h1>
+        <form id="alumno-form">
+            <div class="nombre-apartado">
+                <label for="nombre">Nombre del Alumno</label>
+                <input type="text" id="nombre" required><br>
+            </div>
+            <div class="calificacion-apartado">
+                <label for="calificacion">Calificación del Alumno:</label>
+                <input type="number" id="calificacion">
+            </div>
+            <button type="button" id="agregar-alumno">Agregar Alumno</button>
+        </form>
+        <div class="contenido-resultado">
+            <h4 class="aprobados-alumno">Alumnos aprobados:</h4>
+            <ul id="aprobados"></ul>
+            <h4 class="reprobados-alumno">Alumnos reprobados:</h4>
+            <ul id="reprobados"></ul>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
